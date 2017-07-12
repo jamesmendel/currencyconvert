@@ -1,6 +1,6 @@
 <head>
 	<title>currencyconvert</title>
-	<script src="main.js"></script>
+
 </head>
 
 <body>
@@ -13,9 +13,12 @@
 <template name="app">
 	
 	<p>USD</p>
-	<input type="number" value="1.00" step=".01">
+	<input type="number" id="js-from" value="1.00" step=".01">
+	<button>click</button>
 	
 	<p>EUR</p>
-	<div id="output">Error: </div>
+	<input type="number" id="output" placeholder="eur" disabled="true">
 	
+	
+
 </template>
