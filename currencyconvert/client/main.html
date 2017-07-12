@@ -1,24 +1,24 @@
-<head>
-	<title>currencyconvert</title>
-
-</head>
-
-<body>
-	<h1>Currency Converter</h1>
+<template name="main">
+	<body>
 
 	{{> app}}
 
-</body>
+	</body>
+</template>
 
 <template name="app">
-	
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-2">
+		
 	<p>USD:</p>
-	<input type="number" id="js-from" value="1.00" step=".01">
-	<button>Convert</button>
+	<input type="number" id="js-from" class="form-control" value="1.00" step=".01">
+	<button class="form-control">Convert</button>
 	
 	<p>EUR:</p>
-	<input type="number" id="output" placeholder="Euro" disabled="true">
-	
-	
+	<input type="number" id="output" class="form-control" placeholder="Euro" disabled="true">
+		
+	</div>
+</div>	
 
 </template>
