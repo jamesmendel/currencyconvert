@@ -20,14 +20,11 @@
 				currency = JSON.parse(response);
 				//console.log(currency);
 
-				var output = document.getElementById('output');
-				console.log(output);
-
 				var convfrom = instance.$("#js-from").val();
 				//console.log(convfrom);
 				//console.dir($.type(currency.rates.EUR));
 
-				output.innerHTML = parseFloat(currency.rates.EUR) * convfrom;
+				document.getElementById('output').value = parseFloat(currency.rates.EUR) * convfrom;
 			});
 		},
 
