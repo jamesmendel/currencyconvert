@@ -24,7 +24,9 @@
 				//console.log(convfrom);
 				//console.dir($.type(currency.rates.EUR));
 
-				document.getElementById('output').value = parseFloat(currency.rates.EUR) * convfrom;
+				var country = currency.rates.EUR
+
+				document.getElementById('output').value = (parseFloat(country) * convfrom).toFixed(2);
 			});
 		},
 
